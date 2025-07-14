@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <i class="fas fa-mug-hot text-2xl text-[#6F4E37]"></i>
+    <title>SSP | Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed inset-0 bg-[#6F4E37] bg-opacity-90 z-50 flex flex-col items-center justify-center hidden">
+        <button class="absolute top-6 right-6 text-white text-3xl close-mobile-menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="flex flex-col items-center space-y-8 text-white text-2xl">
+            <a href="#home" class="hover:text-[#E5C3A6] transition">Home</a>
+            <a href="#menu" class="hover:text-[#E5C3A6] transition">Menu</a>
+            <a href="#about" class="hover:text-[#E5C3A6] transition">About</a>
+            <a href="#contact" class="hover:text-[#E5C3A6] transition">Contact</a>
+            <a href="#order" class="px-6 py-3 bg-[#E5C3A6] text-[#6F4E37] rounded-lg font-medium hover:bg-[#d4b495] transition">Order Online</a>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-mug-hot text-2xl text-[#6F4E37]"></i>
+                <h1 class="text-2xl font-bold">SHETHIL<span class="text-[#6F4E37]">SARKER</span></h1>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="font-medium text-gray-700 hover:text-[#6F4E37] transition">Home</a>
+                <a href="#menu" class="font-medium text-gray-700 hover:text-[#6F4E37] transition">Menu</a>
+                <a href="#about" class="font-medium text-gray-700 hover:text-[#6F4E37] transition">About</a>
+                <a href="#contact" class="font-medium text-gray-700 hover:text-[#6F4E37] transition">Contact</a>
+                <button class="px-4 py-2 bg-[#6F4E37] text-white rounded-full font-medium hover:bg-[#5a3d2a] transition">
+                 <a href="order.html">Order Online</a>
+                </button>
+            </nav>
+
+            <button class="md:hidden text-gray-700 text-2xl open-mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white" id="home">
+        <div class="container mx-auto px-4 py-20 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Bangladesh Coffee Crafted With Love</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Discover the perfect blend of quality beans, expert roasting, and passionate brewing.</p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="px-8 py-3 bg-[#6F4E37] text-white rounded-lg font-medium hover:bg-[#5a3d2a] transition">
+                    <a href="#menu">View Our Menu</a>
+                </button>
+                <button class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:text-[#6F4E37] transition">
+                   <a href="order.html">Order Online</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white relative overflow-hidden" id="about">
+        <div class="coffee-bean -top-20 -left-20 text-[#6F4E37] text-[300px]">
+            <i class="fas fa-coffee"></i>
+        </div>
+        <div class="coffee-bean -bottom-20 -right-20 text-[#6F4E37] text-[300px]">
+            <i class="fas fa-coffee"></i>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Coffee beans" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                    <h2 class="text-3xl font-bold mb-6 text-[#6F4E37]">Our Story</h2>
+                    <p class="text-lg mb-6">Founded in 2024, Brew Haven began as a small passion project between two coffee enthusiasts. What started as a humble cart serving pour-overs has grown into a beloved community hub for coffee lovers.</p>
+                    <p class="text-lg mb-8">We source our beans directly from ethical farms around the world, roast them in small batches, and prepare each cup with meticulous care. Our baristas are trained to bring out the unique flavors in every bean.</p>
+                    <button class="px-6 py-3 bg-[#6F4E37] text-white rounded-lg font-medium hover:bg-[#5a3d2a] transition">
+                        Learn More About Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-16 bg-[#FAF6F2]" id="menu">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-[#6F4E37]">Our Menu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Handcrafted beverages made with premium ingredients</p>
+            </div>
+
+            <div class="flex justify-center mb-8 space-x-2 flex-wrap">
+                <button class="menu-category-btn px-4 py-2 bg-gray-200 rounded-full hover:bg-[#6F4E37] hover:text-white transition active" data-category="all">
+                    All
+                </button>
+                <button class="menu-category-btn px-4 py-2 bg-gray-200 rounded-full hover:bg-[#6F4E37] hover:text-white transition" data-category="coffee">
+                    Coffee
+                </button>
+                <button class="menu-category-btn px-4 py-2 bg-gray-200 rounded-full hover:bg-[#6F4E37] hover:text-white transition" data-category="espresso">
+                    Espresso
+                </button>
+                <button class="menu-category-btn px-4 py-2 bg-gray-200 rounded-full hover:bg-[#6F4E37] hover:text-white transition" data-category="tea">
+                    Tea
+                </button>
+                <button class="menu-category-btn px-4 py-2 bg-gray-200 rounded-full hover:bg-[#6F4E37] hover:text-white transition" data-category="pastry">
+                    Pastries
+                </button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="menu-items">
+                <!-- Menu items will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-[#6F4E37] text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Hear from people who've experienced our coffee</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#6F4E37] flex items-center justify-center text-white font-bold text-xl mr-4">JD</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rakib Sarker</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The best latte I've ever had! The baristas clearly know their craft and the atmosphere is so welcoming."</p>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#6F4E37] flex items-center justify-center text-white font-bold text-xl mr-4">SG</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Shanto Sarker</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I come here every Saturday morning. Their cold brew is perfection and the almond croissants are to die for!"</p>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#6F4E37] flex items-center justify-center text-white font-bold text-xl mr-4">MR</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Raja Sarker</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"As a coffee snob, I'm very particular about my pour-overs. Brew Haven consistently delivers exceptional quality."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-[#6F4E37]">Visit Us</h2>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-2">Hours</h3>
+                        <p class="mb-1">Monday - Friday: 6:30 AM - 8:00 PM</p>
+                        <p class="mb-1">Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-2">Location</h3>
+                        <p>Coffee</p>
+                        <p>Dhanmondi 27,Dhaka</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Contact</h3>
+                        <p class="mb-1"><i class="fas fa-phone mr-2 text-[#6F4E37]"></i>+8801783383405</p>
+                        <p><i class="fas fa-envelope mr-2 text-[#6F4E37]"></i>shethilsarkarpanthagmail.com</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-[#6F4E37]">Get In Touch</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6F4E37]">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6F4E37]">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6F4E37]"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-[#6F4E37] text-white rounded-lg font-medium hover:bg-[#5a3d2a] transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#333] text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mug-hot text-2xl text-[#C4A484]"></i>
+                        <h3 class="text-xl font-bold text-white">SHETHIL<span class="text-[#C4A484]">SARKER</span></h3>
+                    </div>
+                    <p class="mb-4">Artisan coffee crafted with passion since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[#C4A484] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-[#C4A484] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-[#C4A484] transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-[#C4A484] transition">Home</a></li>
+                        <li><a href="#menu" class="hover:text-[#C4A484] transition">Menu</a></li>
+                        <li><a href="#about" class="hover:text-[#C4A484] transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-[#C4A484] transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#C4A484]"></i>
+                            <span>Dhanmondi 27,Dhaka</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-[#C4A484]"></i>
+                            <span>+8801783383405</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-[#C4A484]"></i>
+                            <span>shethilsarkarpanthagmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Subscribe to get updates on special offers and events.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button class="px-4 py-2 bg-[#C4A484] text-[#333] rounded-r-lg hover:bg-[#d4b495] transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Shethil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menu Item Modal -->
+    <div class="modal fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4">
+        <div class="relative bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="p-6" id="menu-item-modal-content">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+        
+</body>
+
+</html>
